@@ -12,7 +12,7 @@ class CreateMetaTable extends Migration
      */
     public function up()
     {
-        Schema::create('meta', function(Blueprint $table) {
+        Schema::create('meta', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('metable_id')->unsigned();
             $table->string('metable_type', 255);
